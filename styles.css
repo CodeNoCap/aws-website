@@ -131,7 +131,7 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 10px;
 
 
 }
@@ -139,7 +139,7 @@ header {
 
 .about-us {
     text-align: left;
-    margin: 0 0 0 500px;
+    margin: 0 0 0 400px;
     padding-top: 50px;
 }
 
@@ -152,19 +152,19 @@ header {
 .about-us p {
     font-family: 'Gotham Bold', sans-serif;
     max-width: 80%;
-    font-size: 30px;
+    font-size: 22px;
     white-space: pre-wrap;
     margin-top: 0px;
 }
 
 .about-us h1 {
     font-family: 'Gotham Bold', sans-serif;
-    font-size: 58px;
+    font-size: 48px;
 }
 
 #awsug-title {
     color: #386231;
-    font-size: 58px;
+    font-size: 48px;
 }
 
 .section-title {
@@ -180,7 +180,7 @@ header {
 #awsug-group {
     width: 25%;
     height: auto;
-    margin-right: 500px;
+    margin-right: 400px;
     transform: translateY(100px);
 }
 
