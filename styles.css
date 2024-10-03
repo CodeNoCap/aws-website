@@ -1,0 +1,208 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Gotham', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #386231;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px; /* Set max height */
+    padding: 20px 120px;
+}
+
+.header-left img {
+    width: 50px; /* Reduced logo size */
+}
+
+
+.header-right .nav-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Gotham Bold', sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header-right .nav-btn:hover {
+    color: #87AB7F;
+}
+
+/* Centered Logos */
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0 0 0;
+}
+
+.logos img {
+    margin: 0 15px;
+    width: 100px;
+}
+
+/* Event Details */
+.event-details {
+    text-align: center;
+    font-family: 'Gotham Bold', sans-serif;
+    z-index: 1000;
+}
+
+.event-details h1 {
+    color: black;
+    font-size: 86px;
+}
+
+.event-details h2 {
+    color: #FF9900;
+    font-size: 56px;
+    transform: translateY(-60px);
+}
+
+.event-details #date {
+    color: black;
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 28px;
+    margin: 5px 0;
+    transform: translateY(-80px);
+}
+
+#usls-logo  {
+    position: absolute;
+    right: 120px;
+    top: 0%;
+    width: 200px;
+    height: auto;
+    transform: translateY(-100px);
+}
+
+
+.event-details #loc {
+    color: black;
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 18px;
+    margin: 5px 0;
+    transform: translateY(-80px);
+}
+
+.decorations {
+    position: absolute;
+    width: 100%;
+    z-index: 1001;
+    top: 40%;
+}
+
+.bg-left {
+    float: left;
+    left: 0%;
+    top: 0%;
+    width: 550px; /* Increased size */
+}
+
+.bg-right {
+    float: right;
+    right: 0%;
+    top: 500px;
+    width: 550px; /* Increased size */
+}
+
+/* Parallax Section */
+.parallax {
+    height: 2500px;
+    overflow: hidden;
+    position: relative; 
+    transform: translateY(-20%);
+    z-index: 99;
+ 
+}
+
+.parallax-content {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(transparent 5%, #89B183 30%, #b3c9af 55%, #89B183 70%, transparent); /* Faster transition to green */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+
+}
+
+
+.about-us {
+    text-align: left;
+    margin: 0 0 0 500px;
+    padding-top: 50px;
+}
+
+.title-wrapper {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-family: 'Gotham Bold', sans-serif;
+    max-width: 80%;
+    font-size: 30px;
+    white-space: pre-wrap;
+    margin-top: 0px;
+}
+
+.about-us h1 {
+    font-family: 'Gotham Bold', sans-serif;
+    font-size: 58px;
+}
+
+#awsug-title {
+    color: #386231;
+    font-size: 58px;
+}
+
+.section-title {
+    font-family: 'Gotham Bold', sans-serif;
+    font-weight: bold;
+    color: #ff8138;
+    transform: translateY(70px);
+    font-size: 46px;
+
+}
+
+
+#awsug-group {
+    width: 25%;
+    height: auto;
+    margin-right: 500px;
+    transform: translateY(100px);
+}
+
+@keyframes introFadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-50%) translateZ(0) scale(0.8);
+  }
+}  
+
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-20%) scale(1.05);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-30%) scale(1.1);
+    }
+  }
