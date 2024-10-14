@@ -286,8 +286,9 @@ header {
 
 .event-description {
     display: flex;
-    margin: 0 12vw;
+    margin: 0 12vw 50vh;
     gap: 10vw;
+    transform: translateY(50%);
 }
 
 #event-contents .header {

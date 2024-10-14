@@ -2,20 +2,18 @@
 
 
 .countdown {
-  height: 287px;
-  width: 1440px;
-  max-width: 100%;
-  margin: 0 auto;
+  position: relative;
+  height: auto;
+  margin: 0 auto 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10rem;
   flex-wrap: wrap;
-  transform: translateY(-100%);
-  / scale: 1.5;
 }
 
 .timer {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -26,7 +24,7 @@
 
 .timer h3 {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.5vw;
 }
 
 .counter {
@@ -42,8 +40,8 @@
 .counter__box {
   text-align: center;
   background: blue;
-  width: 89px;
-  height: 103px;
+  width: 7vw;
+  height: 7.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,14 +50,14 @@
 }
 
 .counter__time {
-  font-size: 3rem;
+  font-size: 3.5vw;
   margin: 0;
   padding: 0;
   font-weight: bold;
 }
 
 .counter__duration {
-  font-size: 0.8rem;
+  font-size: 1vw;
   text-transform: capitalize;
   margin: 0;
   padding: 0;
@@ -69,14 +67,14 @@
 /* HELPERS */
 
 .dots {
-  font-size: 52px;
+  font-size: 3vw;
   color: #002e46;
   margin: -0.75rem;
   padding: 0;
 }
 
 .exp {
-  font-size: 52px;
+  font-size: 3vw;
   font-family: "Roboto", sans-serif;
 }
 
