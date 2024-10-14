@@ -1,7 +1,10 @@
 /* Global Styles */
 body {
-    margin: 0;
+    margin: 0px;
     font-family: 'Gotham', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Header Styles */
@@ -10,12 +13,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px; /* Set max height */
-    padding: 20px 120px;
+    height: 8vh; /* Set max height */
+    width: 100%;
 }
 
 .header-left img {
-    width: 50px; /* Reduced logo size */
+    width: 5vh; /* Reduced logo size */
+    margin: 1.15vh 0px 0 1.15vw;
 }
 
 
@@ -24,27 +28,57 @@ header {
     border: none;
     color: white;
     font-family: 'Gotham Bold', sans-serif;
-    font-size: 18px;
-    margin-left: 20px;
+    font-size: 1vw;
+    margin-right: 1.15vw;
     cursor: pointer;
 }
 
 .header-right .nav-btn:hover {
     color: #87AB7F;
+    scale: 1.05;
+    animation: ease-in 3s;
 }
 
 /* Centered Logos */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
 .logos {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px 0 0 0;
+    margin: 10vh 0 0 0;
 }
 
 .logos img {
-    margin: 0 15px;
-    width: 100px;
+    margin: 0 0.885vw;
+    width: 7vw;
 }
+
+.intro button {
+    font-family: 'Gotham Bold', sans-serif;
+    color: white;
+    padding: 1vh;
+    border: none;
+    text-align: center;
+    border-radius: 40px;
+    margin: 1vh 0;
+    width: 25vh;
+    font-weight: 700;
+    letter-spacing: 0.25vw;
+}
+
+#register-now {
+    background-color: #FF9900;
+}
+
+#contact-us {
+    background-color: #FF6A00;
+}
+
 
 /* Event Details */
 .event-details {
@@ -55,45 +89,43 @@ header {
 
 .event-details h1 {
     color: black;
-    font-size: 86px;
+    font-size: 6vw;
 }
 
 .event-details h2 {
     color: #FF9900;
-    font-size: 56px;
-    transform: translateY(-60px);
+    font-size: 4vw;
+    transform: translateY(-4vw);
 }
 
 .event-details #date {
     color: black;
     font-family: 'Gotham Medium', sans-serif;
-    font-size: 28px;
-    margin: 5px 0;
-    transform: translateY(-80px);
+    font-size: 2vw;
+    margin: 0.25vh 0;
+    transform: translateY(-5.5vw);
 }
 
 #usls-logo  {
     position: absolute;
-    right: 120px;
-    top: 0%;
-    width: 200px;
+    right: -5vw;
+    top: 5%;
+    width: 12.5vw;
     height: auto;
-    transform: translateY(-100px);
 }
 
 
 .event-details #loc {
     color: black;
     font-family: 'Gotham Medium', sans-serif;
-    font-size: 18px;
+    font-size: 1.125vw;
     margin: 5px 0;
-    transform: translateY(-80px);
+    transform: translateY(-5vw);
 }
 
 .decorations {
     position: absolute;
     width: 100%;
-    z-index: 1001;
     top: 40%;
 }
 
@@ -101,24 +133,22 @@ header {
     float: left;
     left: 0%;
     top: 0%;
-    width: 550px; /* Increased size */
+    width: 35vw; /* Increased size */
 }
 
 .bg-right {
     float: right;
     right: 0%;
     top: 500px;
-    width: 550px; /* Increased size */
+    width: 35vw; /* Increased size */
 }
 
 /* Parallax Section */
 .parallax {
-    height: 2500px;
+    height: 200vh;
     overflow: hidden;
     position: relative; 
     transform: translateY(-20%);
-    z-index: 99;
- 
 }
 
 .parallax-content {
@@ -131,7 +161,7 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0.5vh;
 
 
 }
@@ -139,40 +169,41 @@ header {
 
 .about-us {
     text-align: left;
-    margin: 0 0 0 400px;
-    padding-top: 50px;
+    margin: 0 0 0 22.5vw;
+    padding-top: 0.5vw;
+    transform: translateY(-20%);
 }
 
 .title-wrapper {
     display: inline-flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.5vw;
 }
 
 .about-us p {
     font-family: 'Gotham Bold', sans-serif;
     max-width: 80%;
-    font-size: 22px;
+    font-size: 1.35rem;
     white-space: pre-wrap;
     margin-top: 0px;
 }
 
 .about-us h1 {
     font-family: 'Gotham Bold', sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 #awsug-title {
     color: #386231;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .section-title {
     font-family: 'Gotham Bold', sans-serif;
     font-weight: bold;
     color: #ff8138;
-    transform: translateY(70px);
-    font-size: 46px;
+    transform: translateY(3vh);
+    font-size: 2rem;
 
 }
 
@@ -180,9 +211,31 @@ header {
 #awsug-group {
     width: 25%;
     height: auto;
-    margin-right: 400px;
-    transform: translateY(100px);
+    margin-right: 300px;
+    transform: translateY(-25%);
 }
+
+#tarshy {
+    position: relative;
+    align-items: center;
+}
+
+#tarshy-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 500px;
+    box-shadow: 
+        0 0 5px rgba(255, 1, 255, 0.9),
+        0 0 15px rgba(255, 1, 255, 0.7),
+        0 0 30px rgba(255, 1, 255, 0.5);
+}
+
+#tarshy-img {
+    position: absolute;
+}
+
 
 @keyframes introFadeOut {
   to {
@@ -206,3 +259,37 @@ header {
       transform: translateY(-30%) scale(1.1);
     }
   }
+
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #386231;
+    position: relative;
+    padding: 1.25vw;
+  }
+
+  #events-footer,
+  #contacts-footer,
+  #resources-footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .footer-content button {
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+  }
+
+  .footer-content button:hover {
+    color: #87AB7F;
+    scale: 1.05;
+  }
+
+  #community-day-logo {
+    margin-right: 50vh;
+  }
+

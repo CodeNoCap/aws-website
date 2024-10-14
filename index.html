@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWS Community Day Visayas 2024</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timer.css">
 </head>
 <body>
     <!-- Header -->
@@ -36,6 +37,10 @@
             <p id="loc">Santuario de La Salle Hall 1 & 2, University of St. La Salle, Bacolod City, Negros Occidental</p>
         </div>
 
+        <div id="buttons">
+            <button id="register-now">REGISTER NOW</button>
+            <button id="contact-us">BE A PARTNER</button>
+        </div>
         <!-- Design Left & Right -->    
     </div>
 
@@ -60,11 +65,70 @@
             <img id="awsug-group" src="./assets/awsug-group.png">
             
         </div>
-
-        
     </div>
 
+    <div id="tarshy">
+        
+        <div id="tarshy-bg"></div>
+        <div id="tarshy-glow"></div>
+        <img id="tarshy-img" src="./assets/tarshy.svg">
+    </div>
+
+    <div class="countdown">
+        <div class="timer">
+          <div class="counter">
+            <div class="counter__box black-white">
+              <p class="counter__time" id="days"></p>
+              <p class="counter__duration">days</p>
+            </div>
+            <div class="counter__box sky-blue">
+              <p class="counter__time" id="hours"></p>
+              <p class="counter__duration">hours</p>
+            </div>
+            <p class="dots">:</p>
+            <div class="counter__box sky-blue">
+              <p class="counter__time" id="minutes"></p>
+              <p class="counter__duration">minutes</p>
+            </div>
+            <p class="dots">:</p>
+            <div class="counter__box sky-blue">
+              <p class="counter__time" id="seconds"></p>
+              <p class="counter__duration">seconds</p>
+            </div>
+      
+          </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="footer">
+        <div class="footer-content">
+            <img id="community-day-logo" src="./assets/footer-logo.svg">
+
+            <div id="events-footer">
+                <h2>Events</h2>
+                <button>AWSUG</button>
+                <button>AWSLC USLS</button>
+            </div>
+
+            <div id="resources-footer">
+                <h2>Events</h2>
+                <button>Kalamayhati</button>
+                <button>Kag Tunga</button>
+            </div>
+
+            <div id="contacts-footer">
+                <h2>Events</h2>
+                <button id="messenger-contact"></button>
+                <button id="fb-contact"></button>
+            </div>
+        </div>
+    </div>
+    
+
     <script src="script.js"></script>
+
 
 </body>
 </html>
