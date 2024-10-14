@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -340,11 +341,12 @@ header {
     }
   }
 
-  .footer {
+  footer {
     position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
+
   }
 
   .footer-content {
@@ -352,15 +354,19 @@ header {
     flex-direction: row;
     background-color: #386231;
     position: relative;
-    padding: 1.25vw;
+    width: 100%;
+    padding: 2vw;
+    gap: 2.5em; 
   }
 
   #events-footer,
   #contacts-footer,
   #resources-footer {
+    margin: 0 1vw;
     display: flex;
     flex-direction: column;
     color: white;
+    transform: translateX(-100%);
   }
 
   .footer-content button {
@@ -376,6 +382,8 @@ header {
   }
 
   #community-day-logo {
-    margin-right: 50vh;
+    width: 30vw;
+    height: auto;
+    margin-right: 50vw;
   }
 
