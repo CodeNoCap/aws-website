@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 /* Header Styles */
@@ -217,24 +218,102 @@ header {
 
 #tarshy {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    transform: translateY(-10%);
 }
+
+#tarshy span {
+    transform: translateX(-100%);
+    color: black;
+    font-family: 'Gotham', sans-serif; /* Assuming this is your font */
+    font-size: 2vw;
+}
+
+
 
 #tarshy-bg {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
-    width: 500px;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -35%);
+    height: 30vw; /* Reduced slightly to allow protrusion */
+    width: 25vw;
+    background-color: white;
+    border-radius: 20px;
     box-shadow: 
-        0 0 5px rgba(255, 1, 255, 0.9),
-        0 0 15px rgba(255, 1, 255, 0.7),
-        0 0 30px rgba(255, 1, 255, 0.5);
+        0 0 1vh rgba(137, 177, 131, 0.9),
+        0 0 3vh rgba(137, 177, 131, 0.7),
+        0 0 6vh rgba(137, 177, 131, 0.5);
+    z-index: 0;
 }
 
-#tarshy-img {
+#tarshy-glow {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15vw;
+    width: 17.5vw;
+    background-color: rgba(255, 106, 0, 0.3); /* Brown glow */
+    border-radius: 15vh;
+    filter: blur(2vw);
+    z-index: 1;
 }
+
+
+#tarshy-img {
+    position: relative;
+    width: 22.5vw;
+    height: auto;
+    z-index: 2;
+    margin-bottom: 0.5vw;
+}
+
+/* Additional styles for text positioning */
+#tarshy-line-one,
+#tarshy-line-two {
+    position: relative;
+    margin: 0.25vh;
+}
+
+
+#bold {
+    font-weight: 900;
+}
+
+.event-description {
+    display: flex;
+    margin: 0 12vw;
+    gap: 10vw;
+}
+
+#event-contents .header {
+    font-family: 'Gotham',sans-serif;
+    font-weight: 900;
+    font-size: 4vw;
+    max-width: 10vw;
+}
+
+#event-contents #body {
+    font-family: 'Gotham',sans-serif;
+    font-weight: 400;
+    font-size: 1.35vw;
+}
+
+#separator-line {
+    background-color: black;
+    width: 40vw;
+    margin: 2.5vw;
+    height: 1px;
+}
+
+#accent {
+    color: #ff8138;
+}
+
 
 
 @keyframes introFadeOut {
@@ -260,6 +339,12 @@ header {
     }
   }
 
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 
   .footer-content {
     display: flex;
