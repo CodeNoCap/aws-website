@@ -3,11 +3,11 @@ document.addEventListener('scroll', function () {
     const intro = document.querySelector('.intro');
     let scrollPosition = window.pageYOffset;
     let viewportHeight = window.innerHeight;
-    let sectionScrollProgress = scrollPosition / (viewportHeight * 0.5);
+    let sectionScrollProgress = scrollPosition / (viewportHeight * 0.8);
 
 
     intro.style.opacity = 1 - sectionScrollProgress;
-    intro.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+    intro.style.transform = 'translateY(' + scrollPosition * 0.2 + 'px)';
 });
 
 

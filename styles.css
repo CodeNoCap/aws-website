@@ -1,4 +1,32 @@
 /* Global Styles */
+@font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/Gotham-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/Gotham-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/Gotham-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/Gotham-Book.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 body {
     margin: 0px;
     font-family: 'Gotham', sans-serif;
@@ -68,7 +96,8 @@ header {
     text-align: center;
     border-radius: 40px;
     margin: 1vh 0;
-    width: 25vh;
+    width: 20vw;
+    height: 5vh;
     font-weight: 700;
     letter-spacing: 0.25vw;
 }
@@ -125,10 +154,28 @@ header {
     transform: translateY(-5vw);
 }
 
+.buttons {
+    align-items: center;
+    z-index: 1000;
+}
+
 .decorations {
+
     position: absolute;
-    width: 100%;
+    transform: translateX(0vw);
+    width: calc(100% + 50vw);
     top: 40%;
+    z-index: 1;
+    opacity: 80%;
+}
+
+.description-decorations {
+    position: absolute;
+    width: calc(100% + 48vh);
+    transform: translateX(-24vh);
+    top: 40%;
+    z-index: 0;
+    opacity: 0.1;
 }
 
 .bg-left {
@@ -144,6 +191,21 @@ header {
     top: 500px;
     width: 35vw; /* Increased size */
 }
+
+.bg-left-two {
+    float: left;
+    left: 0%;
+    top: 0%;
+    width: 25vw; /* Increased size */
+}
+
+.bg-right-two {
+    float: right;
+    right: 0%;
+    top: 500px;
+    width: 25vw; /* Increased size */
+}
+
 
 /* Parallax Section */
 .parallax {
@@ -224,6 +286,7 @@ header {
     justify-content: center;
     align-items: center;
     transform: translateY(-10%);
+    z-index: 2;
 }
 
 #tarshy span {
@@ -309,6 +372,7 @@ header {
     background-color: black;
     width: 40vw;
     margin: 2.5vw;
+    transform: translateX(-5%);
     height: 1px;
 }
 
@@ -325,6 +389,94 @@ header {
   }
 }  
 
+.ticket-container {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 2.5vh;
+    background-color: transparent;
+}
+
+
+.ticket {
+    position: relative;
+    border: black;
+    width: 38.5vw;
+    height: 8.5vw;
+    color: black;   
+    text-wrap: nowrap;
+}
+
+.ticket:hover {
+    cursor: pointer;
+    scale: 1.05;
+    animation: ease-in (1s);
+    box-shadow: 
+        0 0 1vh rgba(137, 177, 131, 0.9),
+        0 0 3vh rgba(137, 177, 131, 0.7),
+        0 0 6vh rgba(137, 177, 131, 0.5);
+    border-radius: 20px;
+}
+
+
+.ticket-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: 1px solid #89B183;
+    border-radius: 20px;
+}
+
+.ticket-content-container h1 {
+    font-size: 1.5vw;
+}
+
+.ticket-title,
+.price {
+    color: #FF9900;
+    font-weight: 900;
+}
+
+.ticket-details {
+    font-weight: 750;
+    font-size: 0.85vw;
+}
+
+.perk-intro {
+    font-size: 0.75vw;
+}
+
+.ticket-content-two {
+    margin: 1.5vw 10vw 0 0;
+    text-align: right;
+}
+
+.perk-intro {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.seats-left {
+    font-size: 1vw;
+    font-weight: 500;
+    margin-bottom: 5vw;
+}
+
+.seats-left,
+.perk-details {
+    color: #0E5803;
+}
+
+
+.ticket-content-container {
+    display: flex;
+    gap: 15vw;
+    margin: 0.5vw 2vw;
+
+}
 
 @keyframes fadeInOut {
     0% {
