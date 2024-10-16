@@ -1,0 +1,122 @@
+/* Centered Logos */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0 0 0;
+}
+
+.logos img {
+    margin: 0 0.885vw;
+    width: 7vw;
+}
+
+.intro button {
+    font-family: 'Gotham Bold', sans-serif;
+    color: white;
+    padding: 1vh;
+    border: none;
+    text-align: center;
+    border-radius: 40px;
+    margin: 1vh 0;
+    width: 20vw;
+    height: 5vh;
+    font-weight: 700;
+    letter-spacing: 0.25vw;
+}
+
+#register-now {
+    background-color: #FF9900;
+}
+
+#contact-us {
+    background-color: #FF6A00;
+}
+
+
+/* Event Details */
+.event-details {
+    text-align: center;
+    font-family: 'Gotham Bold', sans-serif;
+    z-index: 1000;
+}
+
+.event-details h1 {
+    color: black;
+    font-size: 6vw;
+}
+
+.event-details h2 {
+    color: #FF9900;
+    font-size: 4vw;
+    transform: translateY(-4vw);
+}
+
+.event-details #date {
+    color: black;
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 2vw;
+    margin: 0.25vh 0;
+    transform: translateY(-5.5vw);
+}
+
+#usls-logo  {
+    position: absolute;
+    right: -5vw;
+    top: 5%;
+    width: 12.5vw;
+    height: auto;
+}
+
+
+.event-details #loc {
+    color: black;
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 1.125vw;
+    margin: 5px 0;
+    transform: translateY(-5vw);
+}
+
+.buttons {
+    align-items: center;
+    z-index: 1000;
+}
+
+.decorations {
+
+    position: absolute;
+    transform: translateX(0vw);
+    width: calc(100% + 50vw);
+    top: 40%;
+    z-index: 1;
+    opacity: 80%;
+}
+
+.description-decorations {
+    position: absolute;
+    width: calc(100% + 48vh);
+    transform: translateX(-24vh);
+    top: 40%;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.bg-left {
+    float: left;
+    left: 0%;
+    top: 0%;
+    width: 35vw; /* Increased size */
+}
+
+.bg-right {
+    float: right;
+    right: 0%;
+    top: 500px;
+    width: 35vw; /* Increased size */
+}

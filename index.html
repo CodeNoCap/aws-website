@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>AWS Community Day Visayas 2024</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="timer.css">
@@ -14,8 +15,11 @@
             <img src="./assets/aws-logo-white.png" alt="AWS Logo">
         </div>
         <nav class="header-right">
-            <button class="nav-btn">Contact Us</button>
-            <button class="nav-btn">Become a Partner</button>
+            <a href="#event-description" class="nav-btn">About Us</a>
+            <a href="#ticket-section" class="nav-btn">Tickets</a>
+            <a href="#speakers-section" class="nav-btn">Speakers</a>
+            <a href="" class="nav-btn">Contact Us</a>
+            <a href="" class="nav-btn">Partners</a>
         </nav>
     </header>
 
@@ -37,9 +41,9 @@
             <p id="loc">Santuario de La Salle Hall 1 & 2, University of St. La Salle, Bacolod City, Negros Occidental</p>
         </div>
 
-        <div id="intro-buttons">
-            <button id="register-now">REGISTER NOW</button>
-            <button id="contact-us">BE A PARTNER</button>
+        <div class="intro-buttons">
+            <button class="intro-button" id="register-now">REGISTER NOW</button>
+            <button class="intro-button" id="contact-us">BE A PARTNER</button>
         </div>
         <!-- Design Left & Right -->    
         <div class="decorations">
@@ -47,6 +51,44 @@
             <img src="./assets/bg-right.png" alt="Right Decoration" class="bg-right">
         </div>
     </div>
+
+    <div class="key-details" id="key-details">
+        <div class="key-details-content">
+            <p>Look forward to</p>
+            <h1>AWS Community Day</h1>
+            <h2>VISAYAS 2024</h2>
+            <p>November 16, 2024</p>
+        </div>
+            <div class="countdown">
+                <div class="timer">
+                <div class="counter">
+                    <div class="counter__box black-white">
+                    <p class="counter__time" id="days"></p>
+                    <p class="counter__duration">days</p>
+                    </div>
+                    <div class="counter__box sky-blue">
+                    <p class="counter__time" id="hours"></p>
+                    <p class="counter__duration">hours</p>
+                    </div>
+                    <p class="dots">:</p>
+                    <div class="counter__box sky-blue">
+                    <p class="counter__time" id="minutes"></p>
+                    <p class="counter__duration">minutes</p>
+                    </div>
+                    <p class="dots">:</p>
+                    <div class="counter__box sky-blue">
+                    <p class="counter__time" id="seconds"></p>
+                    <p class="counter__duration">seconds</p>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+    </div>
+
+
+
+    
 
     
 
@@ -69,7 +111,7 @@
     </div>
 -->
 
-    <div class="event-description">
+    <div class="event-description" id="event-description">
         <div id="tarshy">
             <div id="tarshy-bg"></div>
             <div id="tarshy-glow"></div>
@@ -95,119 +137,222 @@
         </div>
     </div>
 
-    <div class="ticket-container">
-        <div class="ticket" id="lite-pass">
-            <div class="ticket-background"></div>
-            <div class="ticket-content-container">
-                <div class="ticket-content-one">
-                    <h1 class="ticket-title">Lite Pass</h1>
-                    <p class="ticket-details">Provide details here</p>
-                    <span class="perk-intro">What you get: <span class="perk-details">insert details here</span>
+    <div class="speakers-section" id="speakers-section">
+        <h2 class="speakers-heading"><span class="black-text">Our</span> <span class="orange-text">Speakers</span></h2>
+        <p class="speakers-description">Know more about industry trends, nuances, and innovations from our dynamic speakers.</p>
+        
+        <div class="speakers-container">
+          <button class="speaker-btn prev-btn"><i class="material-icons" style="font-size:5vw;color:rgba(0,0,0,0.3);">navigate_before</i></button>
+      
+          <div class="frames-wrapper">
+            <div class="row big-frames">
+              <div class="speaker-frame big">
+                <div class="speaker-info">
+                  <div class="info-row">
+                    <div class="name-position">
+                      <div class="speaker-name">Speaker's Name</div>
+                      <div class="speaker-position">Speaker's Position</div>
+                    </div>
+                    <div class="company">Speaker's Organization</div>
+                  </div>
                 </div>
-                <div class="ticket-content-two">
-                    <span class="seats-left">Seats left: 120</span>
-                    <h1 class="price">₱120</h1>
+              </div>
+              <div class="speaker-frame big">
+                <div class="speaker-info">
+                  <div class="info-row">
+                    <div class="name-position">
+                      <div class="speaker-name">Speaker's Name</div>
+                      <div class="speaker-position">Speaker's Position</div>
+                    </div>
+                    <div class="company">Speaker's Organization</div>
+                  </div>
+                </div>
+              </div>
             </div>
+            
+            <div class="row small-frames" id="small-frames">
+                <div class="speaker-frame small">
+                    <div class="speaker-info">
+                    <div class="name-position">
+                        <div class="speaker-name-small">Speaker's Name</div>
+                        <div class="speaker-position-small">Speaker's Position</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="speaker-frame small">
+                    <div class="speaker-info">
+                    <div class="name-position">
+                        <div class="speaker-name-small">Speaker's Name</div>
+                        <div class="speaker-position-small">Speaker's Position</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="speaker-frame small">
+                    <div class="speaker-info">
+                    <div class="name-position">
+                        <div class="speaker-name-small">Speaker's Name</div>
+                        <div class="speaker-position-small">Speaker's Position</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="speaker-frame small">
+                    <div class="speaker-info">
+                    <div class="name-position">
+                        <div class="speaker-name-small">Speaker's Name</div>
+                        <div class="speaker-position-small">Speaker's Position</div>
+                    </div>
+                    </div>
+                </div>
             </div>
+          </div>
+      
+          <button class="speaker-btn next-btn"><i class="material-icons" style="font-size:5vw;color:rgba(0,0,0,0.3);">navigate_next</i></button>
+        </div>
+      </div>
+      
+
+    
+    <div class="ticket-section" id="ticket-section">
+        <div class="ticket-heading-wrapper">
+            <h2 id="join-us">JOIN US</h2>
+            <h2 id="get-a-ticket">Grab a ticket now!</h2>
         </div>
 
-        <div class="ticket" id="pro-pass">
-            <div class="ticket-background"></div>
-            <div class="ticket-content-container">
-                <div class="ticket-content-one">
-                    <h1 class="ticket-title">Professionals Pass</h1>
-                    <p class="ticket-details">Provide details here</p>
-                    <span class="perk-intro">What you get: <span class="perk-details">insert details here</span>
+        <div class="ticket-container">
+            <div class="ticket" id="lite-pass">
+                <div class="ticket-background"></div>
+                <div class="ticket-content-container">
+                    <div class="ticket-content-one">
+                        <h1 class="ticket-title">Lite Pass</h1>
+                        <p class="ticket-details">Provide details here</p>
+                        <span class="perk-intro">What you get: <span class="perk-details">insert details here</span>
+                    </div>
+                    <div class="ticket-content-two">
+                        <span class="seats-left">Seats left: 120</span>
+                        <h1 class="price">₱120</h1>
                 </div>
-                <div class="ticket-content-two">
-                    <span class="seats-left">Seats left: 120</span>
-                    <h1 class="price">₱600</h1>
+                </div>
             </div>
-            </div>
-        </div>
 
-        <div class="ticket" id="lite-pass">
-            <div class="ticket-background"></div>
-            <div class="ticket-content-container">
-                <div class="ticket-content-one">
-                    <h1 class="ticket-title">VIP Pass</h1>
-                    <p class="ticket-details">Provide details here</p>
-                    <span class="perk-intro">What you get: <span class="perk-details">insert details here</span>
+            <div class="ticket" id="pro-pass">
+                <div class="ticket-background"></div>
+                <div class="ticket-content-container">
+                    <div class="ticket-content-one">
+                        <h1 class="ticket-title">Professionals Pass</h1>
+                        <p class="ticket-details">Provide details here</p>
+                        <span class="perk-intro">What you get: <span class="perk-details">insert details here</span>
+                    </div>
+                    <div class="ticket-content-two">
+                        <span class="seats-left">Seats left: 120</span>
+                        <h1 class="price">₱600</h1>
                 </div>
-                <div class="ticket-content-two">
-                    <span class="seats-left">Seats left: 120</span>
-                    <h1 class="price">₱1000</h1>
+                </div>
             </div>
+        
+        
+            <div class="ticket" id="lite-pass">
+                <div class="ticket-background"></div>
+                <div class="ticket-content-container">
+                    <div class="ticket-content-one">
+                        <h1 class="ticket-title">VIP Pass</h1>
+                        <p class="ticket-details">Provide details here</p>
+                        <span class="perk-intro">What you get: <span class="perk-details">insert details here</span>
+                    </div>
+                    <div class="ticket-content-two">
+                        <span class="seats-left">Seats left: 120</span>
+                        <h1 class="price">₱1000</h1>
+                </div>
+                </div>
             </div>
-        </div>
 
-        <div class="ticket" id="lite-pass">
-            <div class="ticket-background"></div>
-            <div class="ticket-content-container">
-                <div class="ticket-content-one">
-                    <h1 class="ticket-title">Piso Pass</h1>
-                    <p class="ticket-details">Provide details here</p>
-                    <span class="perk-intro">What you get: <span class="perk-details">insert details here</span>
-                </div>
-                <div class="ticket-content-two">
-                    <span class="seats-left">Seats left: 120</span>
-                    <h1 class="price">₱1</h1>
-            </div>
-            </div>
+           
         </div>
     </div>
 
-    <div class="countdown">
-        <div class="timer">
-          <div class="counter">
-            <div class="counter__box black-white">
-              <p class="counter__time" id="days"></p>
-              <p class="counter__duration">days</p>
+    <div class="sponsors-section">
+        <div class="sponsors-heading-wrapper">
+          <hr class="line-left">
+          <h2 class="sponsors-heading">Our Esteemed Sponsors</h2>
+          <hr class="line-right">
+        </div>
+        
+        <div class="sponsor-tiers">
+          <div class="tier platinum">
+            <h3 class="tier-heading">Platinum Sponsors</h3>
+            <div class="companies">
+              <div class="sponsor-company">Company A</div>
+              <div class="sponsor-company">Company B</div>
             </div>
-            <div class="counter__box sky-blue">
-              <p class="counter__time" id="hours"></p>
-              <p class="counter__duration">hours</p>
+          </div>
+          <div class="tier gold">
+            <h3 class="tier-heading">Gold Sponsors</h3>
+            <div class="companies">
+              <div class="sponsor-company">Company C</div>
+              <div class="sponsor-company">Company D</div>
             </div>
-            <p class="dots">:</p>
-            <div class="counter__box sky-blue">
-              <p class="counter__time" id="minutes"></p>
-              <p class="counter__duration">minutes</p>
+          </div>
+          <div class="tier silver">
+            <h3 class="tier-heading">Silver Sponsors</h3>
+            <div class="companies">
+              <div class="sponsor-company">Company E</div>
+              <div class="sponsor-company">Company F</div>
             </div>
-            <p class="dots">:</p>
-            <div class="counter__box sky-blue">
-              <p class="counter__time" id="seconds"></p>
-              <p class="counter__duration">seconds</p>
-            </div>
-      
           </div>
         </div>
-    </div>
+        
+        <hr class="closing-line">
+      </div>
+      
     
-    
-
-    <footer>
-        <div class="footer-content">
-            <img id="community-day-logo" src="./assets/footer-logo.svg">
-
-            <div id="events-footer">
-                <h2>Events</h2>
-                <button>AWSUG</button>
-                <button>AWSLC USLS</button>
-            </div>
-
-            <div id="resources-footer">
-                <h2>Events</h2>
-                <button>Kalamayhati</button>
-                <button>Kag Tunga</button>
-            </div>
-
-            <div id="contacts-footer">
-                <h2>Events</h2>
-                <button id="messenger-contact"></button>
-                <button id="fb-contact"></button>
-            </div>
+    <div class="faq-container">
+        <h2 class="faq-heading">Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <div class="faq-question" id="first-question">What is AWS Community Day?</div>
+          <div class="faq-answer">AWS Community Day is an event that brings together cloud enthusiasts...</div>
         </div>
-    <footer>
+        <div class="faq-item">
+          <div class="faq-question">Who can attend AWS Community Day?</div>
+          <div class="faq-answer">The event is open to students, professionals, and cloud enthusiasts...</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do I need prior AWS experience?</div>
+          <div class="faq-answer">No prior AWS experience is needed to attend AWS Community Day...</div>
+        </div>
+    </div>
+      
+
+    <footer class="footer">
+        <div class="footer-content">
+          <!-- Logo Section -->
+          <div class="footer-logo">
+            <img src="./assets/footer-logo.svg" alt="Footer Logo">
+          </div>
+      
+          <!-- Selection Columns -->
+          <div class="footer-sections">
+            <!-- Event Section -->
+            <div class="footer-column">
+              <h3 class="footer-heading">Event</h3>
+            </div>
+      
+            <!-- Resources Section -->
+            <div class="footer-column">
+              <h3 class="footer-heading">Resources</h3>
+            </div>
+      
+            <!-- Contact Us Section -->
+            <div class="footer-column">
+              <h3 class="footer-heading">Contact Us</h3>
+              <div class="contact-icons">
+                <img src="./assets/facebook.svg" alt="Facebook">
+                <img src="./assets/facebook-messenger.svg" alt="Facebook Messenger">
+                <img src="./assets/google.svg" alt="Google">
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+      
     
 
     <script src="script.js"></script>

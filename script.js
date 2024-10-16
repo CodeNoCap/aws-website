@@ -1,3 +1,8 @@
+const registerButton = document.querySelector('#register-now');
+const sponsorButton = document.querySelector('#contact-us');
+const ticketSection = document.querySelector('#ticket-section');
+const sponsorSection = document.querySelector('#sponsor-section');
+
 document.addEventListener('scroll', function () {
     const parallax = document.querySelector('.parallax-content');
     const intro = document.querySelector('.intro');
@@ -52,4 +57,23 @@ var x = setInterval(function() {
   //location.reload();
 }, 1000);
 
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+
+function moveToSection(section) {
+  const a = document.createElement('a');
+  a.href = section;
+  a.click();
+  document.body.removeChild(a); // Clean up after triggering the download
+}
+
+registerButton.addEventListener('click', () => {
+  moveToSection('#ticket-section')});
+
+sponsorButton.addEventListener('click', () => {
+  moveToSection('https://aws-sponsorship.vercel.app')});
 

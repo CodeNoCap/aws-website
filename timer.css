@@ -4,7 +4,6 @@
 .countdown {
   position: relative;
   height: auto;
-  margin: 0 auto 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
